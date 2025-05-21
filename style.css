@@ -326,3 +326,31 @@ border-style: inset;
 .justify-center{
     justify-content: center;
 }
+
+/* carte avis*/ 
+.card {
+    --orange: #FD8D5D;
+    --light-orange: #FFD8C7;
+    --gap: 32px;
+    --primary: #111;
+    --secondary: #eee;
+    --black: #000;
+    --white: #fff;
+    --grey: #636363;
+    --light-grey: #aaa;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    box-shadow: 0 0 30px var(--light-grey);
+    font-size: 13px;
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap);
+    width: calc(50% - 1 * var(--gap) / 2);
+    background-color: #eee;
+    padding: 12px;
+    border-radius: 10px;}
+
+
