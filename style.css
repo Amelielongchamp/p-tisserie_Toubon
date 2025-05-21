@@ -18,6 +18,13 @@ font-size: 40px;}
   font-style: normal;
   font-size: 60px;
 }
+.parisienne1{
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
 
 :root{
     --orange :#FD8D5D;
@@ -101,6 +108,8 @@ a{
     vertical-align: middle;
   
 }
+
+
 
 /*Flexbox*/
 .flex{
