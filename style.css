@@ -372,3 +372,10 @@ border-style: inset;
 .marg250{
     margin-top: 100px;
 }
+
+.carteImage{
+    width: 50%;
+    border-radius: 15px;
+    position: relative;
+    padding: 10px 5px;
+}
