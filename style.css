@@ -327,7 +327,7 @@ border-style: inset;
     justify-content: center;
 }
 
-/* carte avis*/ 
+/* carte avis
 .card {
     --orange: #FD8D5D;
     --light-orange: #FFD8C7;
@@ -351,6 +351,24 @@ border-style: inset;
     width: calc(50% - 1 * var(--gap) / 2);
     background-color: #eee;
     padding: 12px;
-    border-radius: 10px;}
+    border-radius: 10px;} */
 
+/* carte avis clients */
 
+.carteAvis {
+    background-color: #e1673323;
+    display: block;
+    width: 23%;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    padding: 30px 0px;
+    border-radius: 15px;
+}
+
+.white {
+    color: white;
+}
+
+.marg250{
+    margin-top: 100px;
+}
