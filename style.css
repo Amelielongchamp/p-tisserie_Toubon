@@ -2,35 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
 }
 
-.serif{ font-family: "Playfair Display", serif;}
-.Corinthia{font-family: "Corinthia", cursive;
-font-size: 40px;}
-.parisienne{
-  font-family: "Parisienne", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 60px;
+.serif {
+    font-family: "Playfair Display", serif;
 }
-.parisienne1{
-  font-family: "Parisienne", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
+
+.Corinthia {
+    font-family: "Corinthia", cursive;
+    font-size: 40px;
+}
+
+.parisienne {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.parisienne1 {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
 
 
-:root{
-    --orange :#FD8D5D;
-    --light-orange:#FFD8C7;
-    --black : #3A3A3A;
-    --light-grey:#E0E0E0;
+:root {
+    --orange: #FD8D5D;
+    --light-orange: #FFD8C7;
+    --black: #3A3A3A;
+    --light-grey: #E0E0E0;
     --gap: 32px;
 }
 
@@ -38,7 +45,7 @@ font-size: 40px;}
 
 
 
-header{
+header {
     padding: 9px 0;
     background-color: #f7c8b3;
 
@@ -46,103 +53,115 @@ header{
     width: 100%;
 }
 
-.backgroundHeader{
+.backgroundHeader {
     background-color: #ffd2bf27;
 }
 
 
-.burger-menu{
+.burger-menu {
     display: none;
 
 }
 
 
 
-.menu{
+.menu {
     display: block;
     position: static;
-    a{
+
+    a {
         display: block;
         font-size: 15px;
         transition: color 0.3s ease;
     }
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         list-style: none;
         gap: 36px;
     }
 }
-.menu a:hover{
+
+.menu a:hover {
     color: #ffd2bf;
 }
 
 /*texte*/
-h1{
-    font-size: 30px; 
-text-align: center;}
-h3{
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
     font-size: 20px;
     margin-top: 35px;
     margin-bottom: 8px;
     text-align: center;
 }
 
-h2{
-font-size:30px;
-margin-top: 60px;
-margin-bottom: 8px;
-text-align: center;
+h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    text-align: center;
 }
-.etiquette{
+
+.etiquette {
     font-size: 16px;
     font-weight: 500;
 }
 
-a{
+a {
     color: var(--black);
     text-decoration: none;
 }
-.material-icons{
+
+.material-icons {
     font-size: 18px;
     vertical-align: middle;
-  
+
 }
 
 
 
 /*Flexbox*/
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
-   
+
 }
-.justify-between{
+
+.justify-between {
     justify-content: space-between;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
-.gap32{
+
+.gap32 {
     --gap: 32px;
     gap: var(--gap);
 }
-.gap16{
+
+.gap16 {
     --gap: 16px;
     gap: var(--gap);
 }
-.align-start{
+
+.align-start {
     align-items: flex-start;
 }
 
 /*Carte*/
-.legende{
-    background-color:#ffd2bf;
-    color:#2d2c2c;
+.legende {
+    background-color: #ffd2bf;
+    color: #2d2c2c;
     font-size: 20px;
     font-weight: 500;
     padding: 16px;
@@ -150,7 +169,7 @@ a{
 }
 
 
-.card{
+.card {
     padding: 16px;
     box-shadow: 0 0 30px var(--light-grey);
     font-size: 13px;
@@ -158,141 +177,149 @@ a{
     border-radius: 20px;
 }
 
-.card ul, .card ol{
+.card ul,
+.card ol {
     padding-left: 16px;
 }
 
 
 
-.btn{
-    color:#ffd2bf;
+.btn {
+    color: #ffd2bf;
     padding: 8px 16px;
     border: 1px solid color#ffb798;
     border-radius: 32px;
 }
-.little-btn{
-    background-color:#ffd2bf;
+
+.little-btn {
+    background-color: #ffd2bf;
     color: var(--black);
-    width :28px;
+    width: 28px;
     height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 32px;
-   
+
 }
 
 .burger {
-  position: relative;
-  width: 20px;
-  height: 15px;
-  background: transparent;
-  cursor: pointer;
-  display: block;
+    position: relative;
+    width: 20px;
+    height: 15px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
 }
 
 .burger input {
-  display: none;
+    display: none;
 }
 
 .burger span {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: black;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 }
 
 .burger span:nth-of-type(1) {
-  top: 0px;
-  transform-origin: left center;
+    top: 0px;
+    transform-origin: left center;
 }
 
 .burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
 }
 
 .burger span:nth-of-type(3) {
-  top: 100%;
-  transform-origin: left center;
-  transform: translateY(-100%);
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
 }
 
-.burger input:checked ~ span:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: 0px;
-  left: 2px;
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 2px;
 }
 
-.burger input:checked ~ span:nth-of-type(2) {
-  width: 0%;
-  opacity: 0;
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
 }
 
-.burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: 14px;
-  left: 2px;
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 14px;
+    left: 2px;
 }
 
 /*Mise en page*/
 
-.container{
+.container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 16px;
 }
-.responsive{
+
+.responsive {
     display: block;
     width: 100%
 }
-.mt-16{
+
+.mt-16 {
     margin-top: 16px;
 }
 
-/* bouton clic and co */
-  .btn {
-    background-color:#ffd2bf;
+/* bouton clic and Go */
+.btn {
+    background-color: #ffd2bf;
     padding: 6px 12px;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
     color: rgb(44, 41, 41);
-  }
-  .gap-12 {
+}
+
+.gap-12 {
     gap: 12px;
-  }
+}
 
 
-  /* carte nos incontournables*/
-  
-  .w45{
-    width:45%;
-  }
+/* carte nos incontournables*/
 
-.card{
+.w45 {
+    width: 45%;
+}
+
+.card {
     width: 28%;
 }
-.card img{
+
+.card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.card-image{
+
+.card-image {
     position: relative;
     height: 250px;
 }
-.card-description{
+
+.card-description {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     background-color: #00000089;
     height: 100%;
@@ -304,26 +331,27 @@ a{
     opacity: 0;
     transition: opacity .4s ease;
 }
-.card:hover .card-description{
+
+.card:hover .card-description {
     opacity: 1;
 }
 
-.marg30{
+.marg30 {
     margin-top: 30px;
 }
 
-.margBottom{
+.margBottom {
     margin-bottom: 200px;
 }
 
-.bordur{
-border-style: inset;
+.bordur {
+    border-style: inset;
 }
 
 
 /* separation nos produits*/
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
@@ -355,27 +383,43 @@ border-style: inset;
 
 /* carte avis clients */
 
-.carteAvis {
-    background-color: #e1673323;
-    display: block;
-    width: 23%;
-    text-align: center;
-    backdrop-filter: blur(6px);
-    padding: 30px 0px;
-    border-radius: 15px;
-}
 
-.white {
-    color: white;
-}
 
-.marg250{
+
+.w50{
+    width: 50%;
+}
+.marg250 {
     margin-top: 100px;
 }
 
-.carteImage{
-    width: 50%;
-    border-radius: 15px;
-    position: relative;
-    padding: 10px 5px;
+.carteImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius:50px;
+    float: left;
+    shape-outside: margin-box;
+    margin:0 20px 5px 0
+}
+
+.container2 {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.containerh4-1{
+    margin-bottom: 10px;
+}
+
+
+/* footer*/ 
+
+.backgroundFooter{
+
+    background-color: #ffd2bf27;
 }
