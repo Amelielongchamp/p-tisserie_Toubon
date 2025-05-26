@@ -6,21 +6,32 @@
   "avantagesClients":[
     {
       "description":"Large sélection de pâtisseries artisanale",
-      "image":"asssets/ambiance chaleureuse.png"},
+      "image":"https://cdn-icons-png.flaticon.com/128/13747/13747023.png"},
 
     {"desciption":"Ingrédients de qualité pour des saveurs authentiques",
-    "image":"asssets/produit artisanal.webp"},
+    "image":"https://cdn-icons-png.flaticon.com/128/13747/13747023.png"},
 
     {
    "description": "Ambiance chaleureuse pour une expérience gourmande unique",
-  "image":"asssets/ingreddient1er .jpg"}
+  "image":"https://cdn-icons-png.flaticon.com/128/16213/16213387.png"}
   ],
-  "produitsPhares":[
+  "Phares":[
     {
+     "nom": "Entremet vanille",
+      "description": "Laissez-vous tenter par notre entremet vanille , une délicieuse création vanille/coco. un sablé vanillé, une crème onctueuse vanille et un praliné coco pour une explosion de saveurs.",
+      "image": "asssets/ChatGPT Image 26 mai 2025, 14_14_42.png"
+    },
+    {
+      "nom": "Tarte aux Fruits Frais",
+      "description": "Savourez notre tarte aux fruits frais, une création légère et fruitée. Des fruits de saison disposés avec art sur une délicieuse pâte sablée.",
+      "image": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/tarte-fruits-frais.webp"
+    },
+        {
       "nom": "Éclair au Chocolat",
       "description": "Laissez-vous tenter par notre éclair au chocolat, une délicieuse pâtisserie faite maison. Une coque croquante et une crème onctueuse pour une explosion de saveurs.",
       "image": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/eclair-chocolat.webp"
-    }],
+    }
+  ],
 
   "produits": [
     {
@@ -77,19 +88,23 @@
       "prenom": "Sophie",
       "typeExperience": "Macarons Variés",
       "commentaire": "Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !",
-      "note": 5
+      "note":5
     },
     {
       "prenom": "Pierre",
       "typeExperience": "Cours de Pâtisserie",
       "commentaire": "Les cours de pâtisserie chez TouBon sont divertissants et instructifs. J'ai appris à créer des desserts incroyables. Une expérience enrichissante !",
-      "note": 4
+      "note": 5
+      
     },
     {
       "prenom": "Claire",
       "typeExperience": "Gâteau Sur Mesure",
       "commentaire": "TouBon a créé le gâteau sur mesure parfait pour mon anniversaire. Non seulement il était magnifique, mais il était aussi délicieux. Un grand merci !",
-      "note": 5
-    }
-  ]
+      "note": 4
+    }]
+  
+
+
+
 }

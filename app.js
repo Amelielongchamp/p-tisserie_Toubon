@@ -6,8 +6,12 @@ fetch('data.json')
         afficherProduits(data.produits)
         afficherSevices(data.services)
         afficherTemoignages(data.temoignages)
+ afficherNosProduitsPhares(data.Phares)
+ afficheravantagesClients(data.avantagesClients)
+
 
     });
+
 
 
 function afficherProduits(tableauProduits) {
@@ -53,42 +57,31 @@ function afficherSevices(tableauServices) {
 }
 
 function afficherNosProduitsPhares(tableauPhares){
-    tableauPhares.forEach(phare=>{
+    tableauPhares.forEach(Phare=>{
 
         //modifie mes cartes nos produits phares//
         document.getElementById("carte-nosProduitsPhares").innerHTML +=`
         
             <div class="card ">
         <div class="card-image">
-            <img src="asssets/patisserie.jpg" alt="">
+            <img src="${Phare.image}" alt="">
             <div class="card-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus iste dignissimos vitae
-                    facilis soluta placeat </p>
+                <p>${Phare.description} </p>
             </div>
-            <h3 class="parisienne1">Nom du produit</h3>
+            <h3 class="parisienne1">${Phare.nom}</h3>
 
         </div>
     </div>
-        
-        
-        
-        
-        
-        
-        `
-
-
-
-
-
-
+`
     })
 }
+
 
 function afficherTemoignages(tableauTemoignages){
 tableauTemoignages.forEach(temoignage => {
 
     //modifie mes temoignages//
+    
     document.getElementById("carte-temoignages").innerHTML += `
      <section class="container2 justify-between">
      <div>
@@ -107,4 +100,24 @@ tableauTemoignages.forEach(temoignage => {
             </div>
     </section>
     `});
+}
+
+
+//etoiles pour les temoignages //
+let etoile= "★".repeat(note)+"☆".repeat(5-note)
+
+//Avantages clients //
+
+function afficheravantagesClients (tableauAvantagesClients){
+    tableauAvantagesClients.forEach(avantage =>{
+
+//modifie mes avantages clients //
+document.getElementById("carte-avantages").innerHTML +=`
+ <div class="w30">
+            <img src="${tableauAvantages.image}" alt="">
+       <p>${tableauAvantages.description}</p>
+        
+        </div>
+`
+})
 }
