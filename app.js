@@ -37,5 +37,29 @@ fetch('data.json')
             </div>
         </div>
 
-`  
-});
+`
+        });
+
+        let temoignage = ""
+        data.temoignages.forEach(temoignage => {
+
+            //modifie mes temoignages//
+            document.getElementById("carte-temoignages").innerHTML += `
+     <div>
+        
+                <h4 class="containerh4-1">${temoignage.prenom}</h4>
+                <div>
+                <p>${temoignage.note}★</p>
+                </div>
+                <div>
+                <p class="margin10">${temoignage.typeExperience}
+                </div>
+            <div>
+                <p class="margin10">${temoignage.commentaire}</p>
+            </div>
+            
+            </div>
+    
+    `})
+
+    
