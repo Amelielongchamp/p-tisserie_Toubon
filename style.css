@@ -139,6 +139,9 @@ a {
 .align-center {
     align-items: center;
 }
+.textCenter{
+    text-align: center
+}
 
 .justify-center {
     justify-content: center;
@@ -384,7 +387,9 @@ a {
 /* carte avis clients */
 
 
-
+.w30{
+    width: 30%;
+}
 
 .w50{
     width: 50%;
@@ -398,7 +403,6 @@ a {
     height: 100px;
     object-fit: cover;
     border-radius:50px;
-    float: left;
     shape-outside: margin-box;
     margin:0 20px 5px 0
 }
@@ -415,6 +419,11 @@ a {
 .containerh4-1{
     margin-bottom: 10px;
 }
+
+.margin10{
+    margin-top: 10px;
+}
+
 
 
 /* footer*/ 
