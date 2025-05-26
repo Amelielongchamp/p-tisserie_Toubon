@@ -2,10 +2,19 @@ fetch('data.json')
     .then(response => response.json())
     .then(data => {
         let produit = ""
-        data.produits.forEach(produit => {
 
-            //modifie chaques carte produits//   
-            document.getElementById("carte-produits").innerHTML += `
+        afficherProduits(data.produits)
+        afficherSevices(data.services)
+        afficherTemoignages(data.temoignages)
+
+    });
+
+
+function afficherProduits(tableauProduits) {
+    tableauProduits.forEach(produit => {
+
+        //modifie chaques carte produits//   
+        document.getElementById("carte-produits").innerHTML += `
     
         <div class="card margBottom">
             <div class="card-image">
@@ -18,13 +27,15 @@ fetch('data.json')
             </div>
         </div>
     `
-        });
+    });
 
-        let service = ""
-        data.services.forEach(service => {
+}
 
-            //modifie mes cartes nos services//
-            document.getElementById("carte-services").innerHTML += `
+function afficherSevices(tableauServices) {
+    tableauServices.forEach(service => {
+
+        //modifie mes cartes nos services//
+        document.getElementById("carte-services").innerHTML += `
 
  <div class="card margBottom">
             <div class="card-image">
@@ -38,13 +49,15 @@ fetch('data.json')
         </div>
 
 `
-        });
+    });
+}
 
-        let temoignage = ""
-        data.temoignages.forEach(temoignage => {
+function afficherTemoignages(tableauTemoignages){
+tableauTemoignages.forEach(temoignage => {
 
-            //modifie mes temoignages//
-            document.getElementById("carte-temoignages").innerHTML += `
+    //modifie mes temoignages//
+    document.getElementById("carte-temoignages").innerHTML += `
+     <section class="container2 justify-between">
      <div>
         
                 <h4 class="containerh4-1">${temoignage.prenom}</h4>
@@ -59,7 +72,6 @@ fetch('data.json')
             </div>
             
             </div>
-    
-    `})
-
-    
+    </section>
+    `});
+}
