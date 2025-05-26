@@ -15,13 +15,23 @@
    "description": "Ambiance chaleureuse pour une expérience gourmande unique",
   "image":"asssets/ingreddient1er .jpg"}
   ],
-
+  "produitsPhares":[
+    {
+      "nom": "Éclair au Chocolat",
+      "description": "Laissez-vous tenter par notre éclair au chocolat, une délicieuse pâtisserie faite maison. Une coque croquante et une crème onctueuse pour une explosion de saveurs.",
+      "image": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/eclair-chocolat.webp"
+    }],
 
   "produits": [
     {
       "nom": "Éclair au Chocolat",
       "description": "Laissez-vous tenter par notre éclair au chocolat, une délicieuse pâtisserie faite maison. Une coque croquante et une crème onctueuse pour une explosion de saveurs.",
       "image": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/eclair-chocolat.webp"
+    },
+     {
+      "nom": "Entremet vanille",
+      "description": "Laissez-vous tenter par notre entremet vanille , une délicieuse création vanille/coco. un sablé vanillé, une crème onctueuse vanille et un praliné coco pour une explosion de saveurs.",
+      "image": "asssets/ChatGPT Image 26 mai 2025, 14_14_42.png"
     },
     {
       "nom": "Macarons Variés",
@@ -48,15 +58,18 @@
   "services": [
     {
       "nom": "Gâteaux Sur Mesure",
-      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables."
+      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables.",
+      "image":"asssets/gatezu sur mesure.png"
     },
     {
       "nom": "Cours de Pâtisserie",
-      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations."
-    },
+      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations.",
+      "image":"asssets/cours patisserie.jpg"
+     },
     {
       "nom": "Service Traiteur",
-      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions."
+      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions.",
+      "image":"asssets/service traiteur.png"
     }
   ],
   "temoignages": [

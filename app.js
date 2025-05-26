@@ -39,7 +39,7 @@ function afficherSevices(tableauServices) {
 
  <div class="card margBottom">
             <div class="card-image">
-                <img src="asssets/gateau sur messur.jpg" alt="">
+                <img src="${service.image}" alt="">
                 <div class="card-description">
                     <p>${service.description} </p>
                 </div>
@@ -50,6 +50,39 @@ function afficherSevices(tableauServices) {
 
 `
     });
+}
+
+function afficherNosProduitsPhares(tableauPhares){
+    tableauPhares.forEach(phare=>{
+
+        //modifie mes cartes nos produits phares//
+        document.getElementById("carte-nosProduitsPhares").innerHTML +=`
+        
+            <div class="card ">
+        <div class="card-image">
+            <img src="asssets/patisserie.jpg" alt="">
+            <div class="card-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus iste dignissimos vitae
+                    facilis soluta placeat </p>
+            </div>
+            <h3 class="parisienne1">Nom du produit</h3>
+
+        </div>
+    </div>
+        
+        
+        
+        
+        
+        
+        `
+
+
+
+
+
+
+    })
 }
 
 function afficherTemoignages(tableauTemoignages){
