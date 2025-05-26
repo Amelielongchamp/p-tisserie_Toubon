@@ -81,14 +81,14 @@ function afficherTemoignages(tableauTemoignages){
 tableauTemoignages.forEach(temoignage => {
 
     //modifie mes temoignages//
-    
+    let etoile= "★".repeat(temoignage.note)+"☆".repeat(5-temoignage.note)
     document.getElementById("carte-temoignages").innerHTML += `
      <section class="container2 justify-between">
      <div>
         
                 <h4 class="containerh4-1">${temoignage.prenom}</h4>
                 <div>
-                <p>${temoignage.note}★</p>
+                <p>${etoile}</p>
                 </div>
                 <div>
                 <p class="margin10">${temoignage.typeExperience}
@@ -104,7 +104,7 @@ tableauTemoignages.forEach(temoignage => {
 
 
 //etoiles pour les temoignages //
-let etoile= "★".repeat(note)+"☆".repeat(5-note)
+//let etoile= "★".repeat(note)+"☆".repeat(5-note)
 
 //Avantages clients //
 
@@ -114,8 +114,8 @@ function afficheravantagesClients (tableauAvantagesClients){
 //modifie mes avantages clients //
 document.getElementById("carte-avantages").innerHTML +=`
  <div class="w30">
-            <img src="${tableauAvantages.image}" alt="">
-       <p>${tableauAvantages.description}</p>
+            <img src="${avantage.image}" alt="">
+       <p class="paragraphe">${avantage.description}</p>
         
         </div>
 `

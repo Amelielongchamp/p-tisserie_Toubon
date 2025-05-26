@@ -491,3 +491,15 @@ list-style-type: none;
 .liste-Services a:hover{
     color: #f55c15;
 }
+
+
+/*avantages*/
+
+.paragraphe{
+font-family: "Parisienne", cursive;
+    font-size: 30px;
+}
+
+.icone{
+text-align: center;
+}
